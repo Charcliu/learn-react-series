@@ -1,12 +1,21 @@
 import React from 'react';
 import './App.css';
-import ModuleName from '@context/index';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import loadable from '@loadable/component';
+const Context = loadable(() => import('@context/index'), { fallback: <h1>loading</h1> });
 
 function App() {
   return (
-    <div className="App">
-      <ModuleName></ModuleName>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/context">
+            <Context></Context>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
