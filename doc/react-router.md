@@ -89,3 +89,48 @@ function App() {
 }
 ```
 
+#### Router Hooks
+
+- useHistory 返回 history 对象
+- useLocation 返回 location 对象
+- useParams 返回当前 url 参数 key/value 对象
+- useRouteMatch 尝试以与 Route 相同的方式匹配当前URL
+
+```tsx
+// before
+import { Route } from 'react-router-dom'
+
+function App() {
+  return (
+    <div>
+      {/* ... */}
+      <Route
+        path="/BLOG/:slug/"
+        strict
+        sensitive
+        render={({ match }) => {
+          return match ? <BlogPost match={match} /> : <NotFound />
+        }}
+      />
+    </div>
+  )
+}
+
+// after
+import { useRouteMatch } from 'react-router-dom'
+
+function App() {
+  let match = useRouteMatch({
+    path: '/BLOG/:slug/',
+    strict: true,
+    sensitive: true
+  })
+
+  return (
+    <div>
+      {/* ... */}
+      {match ? <BlogPost match={match} /> : <NotFound />}
+    </div>
+  )
+}
+```
