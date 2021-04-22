@@ -2,6 +2,8 @@
 
 转发父组件Ref到其子组件的方式，返回React组件。**（相当于给传入React.createRef的React组件透传ref属性，并返回一个React组件）**
 
+![refs](./refs.png)
+
 - 创建ref
 
 ```javascript
