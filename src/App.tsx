@@ -5,6 +5,7 @@ import loadable from '@loadable/component';
 const Context = loadable(() => import('@context/index'), { fallback: <h1>loading</h1> });
 const ErrorBoundary = loadable(() => import('@errorboundary/index'), { fallback: <h1>loading</h1> });
 const RefsForWard = loadable(() => import('@/refs/index'), { fallback: <h1>loading</h1> });
+const Fragments = loadable(() => import('@/fragments/index'), { fallback: <h1>loading</h1> });
 
 function App() {
   return (
@@ -16,9 +17,12 @@ function App() {
           </li>
           <li>
             <Link to="/errorBoundary">errorBoundary</Link>
-          </li>{' '}
+          </li>
           <li>
             <Link to="/refsForward">refsForward</Link>
+          </li>
+          <li>
+            <Link to="/fragments">fragments</Link>
           </li>
         </ul>
         <Switch>
@@ -30,6 +34,9 @@ function App() {
           </Route>
           <Route path="/refsForward">
             <RefsForWard></RefsForWard>
+          </Route>
+          <Route path="/fragments">
+            <Fragments></Fragments>
           </Route>
         </Switch>
       </div>
