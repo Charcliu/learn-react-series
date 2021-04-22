@@ -79,3 +79,8 @@ function HooksThemedButton() {
 }
 ```
 
+#### 动态Context
+
+- dynamicContext.tsx 顶层父组件**层层传递toggleTheme**方法至子组件，子组件触发修改
+- consumerContext.tsx 层层传递修改方法比较繁琐，可以把**修改方法通过Context传递给子组件，子组件通过Consumer方法获取并执行**
+- multiContext.tsx 消费多个Context

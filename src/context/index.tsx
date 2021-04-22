@@ -1,5 +1,7 @@
 import React, { useContext, useState } from 'react';
 import DynamicContext from './dynamicContext';
+import ConsumerContext from './consumerContext';
+import MultiContext from './multiContext';
 
 /**
  * 创建Context对象
@@ -34,6 +36,10 @@ export default function Context() {
       <hr></hr>
       <h6>dynamic change context</h6>
       <DynamicContext></DynamicContext>
+      <h6>consumer change context</h6>
+      <ConsumerContext></ConsumerContext>
+      <h6>multi context</h6>
+      <MultiContext></MultiContext>
     </ThemeContext.Provider>
   );
 }

@@ -5,8 +5,6 @@ import loadable from '@loadable/component';
 const Context = loadable(() => import('@context/index'), { fallback: <h1>loading</h1> });
 const ErrorBoundary = loadable(() => import('@errorboundary/index'), { fallback: <h1>loading</h1> });
 
-import Test from '@/test/index';
-
 function App() {
   return (
     <Router>
@@ -19,7 +17,6 @@ function App() {
             <Link to="/errorBoundary">errorBoundary</Link>
           </li>
         </ul>
-        <Test></Test>
         <Switch>
           <Route path="/context">
             <Context></Context>
