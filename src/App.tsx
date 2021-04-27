@@ -7,6 +7,8 @@ const ErrorBoundary = loadable(() => import('@errorboundary/index'), { fallback:
 const RefsForWard = loadable(() => import('@/refs/index'), { fallback: <h1>loading</h1> });
 const Fragments = loadable(() => import('@/fragments/index'), { fallback: <h1>loading</h1> });
 const Hoc = loadable(() => import('@/hoc/index'), { fallback: <h1>loading</h1> });
+const Jsx = loadable(() => import('@/jsx/index'), { fallback: <h1>loading</h1> });
+const Performance = loadable(() => import('@/performance/index'), { fallback: <h1>loading</h1> });
 
 function App() {
   return (
@@ -28,6 +30,12 @@ function App() {
           <li>
             <Link to="/hoc">hoc</Link>
           </li>
+          <li>
+            <Link to="/jsx">jsx</Link>
+          </li>
+          <li>
+            <Link to="/performance">performance</Link>
+          </li>
         </ul>
         <Switch>
           <Route path="/context">
@@ -44,6 +52,12 @@ function App() {
           </Route>
           <Route path="/hoc">
             <Hoc></Hoc>
+          </Route>
+          <Route path="/jsx">
+            <Jsx></Jsx>
+          </Route>
+          <Route path="/performance">
+            <Performance></Performance>
           </Route>
         </Switch>
       </div>
