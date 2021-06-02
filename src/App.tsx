@@ -15,7 +15,9 @@ const Performance = loadable(() => import('@/performance/index'), { fallback: <h
 function App() {
   return (
     <Router>
-      <Alert alertType="warn">123</Alert>
+      <Alert alertType="warn" closeable>
+        123
+      </Alert>
       <Button btnType="primary">122</Button>
       <div className="App">
         <ul>
