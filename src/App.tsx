@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Alert, Button } from '@tencent/tsign-component-library';
+import '@tencent/tsign-component-library/dist/index.css';
 
 import loadable from '@loadable/component';
 const Context = loadable(() => import('@context/index'), { fallback: <h1>loading</h1> });
@@ -13,6 +15,8 @@ const Performance = loadable(() => import('@/performance/index'), { fallback: <h
 function App() {
   return (
     <Router>
+      <Alert alertType="warn">123</Alert>
+      <Button btnType="primary">122</Button>
       <div className="App">
         <ul>
           <li>
