@@ -2639,10 +2639,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tencent/tsign-component-library@^0.1.4":
-  version "0.1.4"
-  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-component-library/-/@tencent/tsign-component-library-0.1.4.tgz#c9f988b086449c5fb020af5fb5a6a43c9c6ffa47"
-  integrity sha512-jbu98elliER1UthETpNXUY8a4lfj8R+vzgNyAM6Lon/XkhHt+jqmW0GHSbexRa5z8OvGOxk706hiHEt51Jiwxg==
+"@tencent/tsign-component-library@^0.1.6":
+  version "0.1.6"
+  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-component-library/-/@tencent/tsign-component-library-0.1.6.tgz#502cb89cae36867181bcbd964a0e0769136d1a2c"
+  integrity sha512-Wh9+p849pbGgvlkhNd/nZzsrDzVegnSX7Qz5p59d61PVFYl0o9HeFE4vRQF5KOl48P+eK1cnZHkuZE0e86PA9g==
   dependencies:
     "@testing-library/jest-dom" "^5.11.4"
     "@testing-library/react" "^11.1.0"
