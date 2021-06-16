@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Alert } from '@tencent/tsign-component-library';
 import '@tencent/tsign-component-library/dist/index.css';
 
 import loadable from '@loadable/component';
@@ -15,9 +14,6 @@ const Performance = loadable(() => import('@/performance/index'), { fallback: <h
 function App() {
   return (
     <Router>
-      <Alert alertType="success" closeable>
-        123
-      </Alert>
       <div className="App">
         <ul>
           <li>
