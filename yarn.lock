@@ -2666,6 +2666,11 @@
     typescript "^4.1.2"
     web-vitals "^1.0.1"
 
+"@tencent/tsign-error-code@^0.0.2":
+  version "0.0.2"
+  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-error-code/-/@tencent/tsign-error-code-0.0.2.tgz#74cb3ad24096739f738fef76283a8daabc1e7c25"
+  integrity sha512-5f7Xudd8Ll1QdssUKuWeCPaF0wpdG0IW7F0DIR+R9lQaFN4c9+pzKREeY/lGXJsYtL8eNSOZ3u7T5BJ0IxRiYw==
+
 "@testing-library/dom@^7.28.1":
   version "7.30.3"
   resolved "http://mirrors.tencent.com/npm/@testing-library%2fdom/-/dom-7.30.3.tgz#779ea9bbb92d63302461800a388a5a890ac22519"

@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import '@tencent/tsign-component-library/dist/index.css';
-
 import loadable from '@loadable/component';
+import { add } from '@tencent/tsign-error-code';
+
 const Context = loadable(() => import('@context/index'), { fallback: <h1>loading</h1> });
 const ErrorBoundary = loadable(() => import('@errorboundary/index'), { fallback: <h1>loading</h1> });
 const RefsForWard = loadable(() => import('@/refs/index'), { fallback: <h1>loading</h1> });
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {add(1, 3)}
         <ul>
           <li>
             <Link to="/context">context</Link>
