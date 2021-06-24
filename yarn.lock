@@ -2651,10 +2651,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tencent/tsign-component-library@^0.1.7":
-  version "0.1.7"
-  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-component-library/-/@tencent/tsign-component-library-0.1.7.tgz#2f86ac769a99dda34d85838ab1ae87b7d53651ac"
-  integrity sha512-eouuzkEeGX6ITesVHOvwfrAzxo/henI6VPHuE8/pDEm3VTmUgyZaL2TmAiS8lGlDm/cO7JV2rV8sl2CqlX1YKw==
+"@tencent/tsign-component-library@^0.1.10":
+  version "0.1.10"
+  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-component-library/-/@tencent/tsign-component-library-0.1.10.tgz#b51127f5381d00ae881af2630dbd5c1be5233329"
+  integrity sha512-ZDe6PC+ZIh7AZROtBHk2Y0qmwjeYmEWRBsTUrTAHq+gCNpmgo27ZmvTT0/G4u7w3ZnHj0PvQtIOwgxcgwH+yJw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.28.0"
     classnames "^2.3.1"
@@ -2662,10 +2662,10 @@
     gatsby-plugin-sass "^4.8.0"
     node-sass "^6.0.0"
 
-"@tencent/tsign-error-code@^0.0.2":
-  version "0.0.2"
-  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-error-code/-/@tencent/tsign-error-code-0.0.2.tgz#74cb3ad24096739f738fef76283a8daabc1e7c25"
-  integrity sha512-5f7Xudd8Ll1QdssUKuWeCPaF0wpdG0IW7F0DIR+R9lQaFN4c9+pzKREeY/lGXJsYtL8eNSOZ3u7T5BJ0IxRiYw==
+"@tencent/tsign-tool@^0.1.0":
+  version "0.1.0"
+  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-tool/-/@tencent/tsign-tool-0.1.0.tgz#cc2ff4140b8b0790c852131d3ad847a7a7f76de1"
+  integrity sha512-HZ9JC5M8AORdvxpAb0LKPSoUXcX1RYaYP0nrW3mnWwUwAUWt0btCnKTJ/Iwg7hCNx2TSqFOTxe/ULJUXNwk6PQ==
 
 "@testing-library/dom@^7.28.1":
   version "7.30.3"

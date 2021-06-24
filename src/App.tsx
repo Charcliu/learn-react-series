@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import '@tencent/tsign-component-library/dist/tsign-component.min.css';
 import loadable from '@loadable/component';
-import { add } from '@tencent/tsign-error-code';
-import { Button, Alert } from '@tencent/tsign-component-library';
+import { Alert } from '@tencent/tsign-component-library';
+import { convertErrorCode } from '@tencent/tsign-tool';
 
 const Context = loadable(() => import('@context/index'), { fallback: <h1>loading</h1> });
 const ErrorBoundary = loadable(() => import('@errorboundary/index'), { fallback: <h1>loading</h1> });
@@ -17,11 +17,28 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {add(1, 3)}
-        <Button btnType="link" href="https://www.baidu.com">
-          213
-        </Button>
-        <Alert alertType="error">321</Alert>
+        {JSON.stringify(
+          convertErrorCode([
+            {
+              ActionName: 'test',
+              ErrorCodes: [
+                {
+                  ErrorCode: 'code01',
+                  ErrorMessage: 'saber',
+                },
+                {
+                  ErrorCode: 'code01000000000000000',
+                  ErrorMessage: 'saber',
+                },
+                {
+                  ErrorCode: 'code02',
+                  ErrorMessage: 'demo',
+                },
+              ],
+            },
+          ]),
+        )}
+        <Alert>{`今天是${new Date().toLocaleString()}`}</Alert>
         <ul>
           <li>
             <Link to="/context">context</Link>
