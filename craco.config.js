@@ -18,16 +18,4 @@ module.exports = {
   webpack: {
     plugins: [...whenProd(() => [new BundleAnalyzerPlugin()], [])],
   },
-  babel: {
-    plugins: [
-      [
-        'import',
-        {
-          libraryName: '@tencent/tsign-component-library', // 转换组件库的名字
-          libraryDirectory: 'dist/components', // 转换的路径
-          camel2DashComponentName: false, // 设置为 false 来阻止组件名称的转换
-        },
-      ],
-    ],
-  },
 };

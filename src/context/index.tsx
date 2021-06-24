@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import DynamicContext from './dynamicContext';
 import ConsumerContext from './consumerContext';
 import MultiContext from './multiContext';
-import { Alert, Button } from '@tencent/tsign-component-library';
 
 /**
  * 创建Context对象
@@ -26,10 +25,6 @@ export default function Context() {
      * Provider value变化，内部所有消费组件都会重新渲染
      */
     <ThemeContext.Provider value={theme}>
-      <Alert>提醒</Alert>
-      <Button btnType="danger" style={{ marginLeft: '10px' }}>
-        按钮
-      </Button>
       <Toolbar></Toolbar>
       <button
         onClick={() => {
