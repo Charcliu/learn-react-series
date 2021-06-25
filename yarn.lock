@@ -2662,10 +2662,10 @@
     gatsby-plugin-sass "^4.8.0"
     node-sass "^6.0.0"
 
-"@tencent/tsign-tool@^0.1.0":
-  version "0.1.0"
-  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-tool/-/@tencent/tsign-tool-0.1.0.tgz#cc2ff4140b8b0790c852131d3ad847a7a7f76de1"
-  integrity sha512-HZ9JC5M8AORdvxpAb0LKPSoUXcX1RYaYP0nrW3mnWwUwAUWt0btCnKTJ/Iwg7hCNx2TSqFOTxe/ULJUXNwk6PQ==
+"@tencent/tsign-utils@^0.2.4":
+  version "0.2.4"
+  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-utils/-/@tencent/tsign-utils-0.2.4.tgz#ea7f24d196dffaca1d15ab80c65d0e33de860d85"
+  integrity sha512-mChc0Ubv/3TyLzhO+NvFFhn1JIa93ancIHO9I8yuYb3Rc3Q3yl5SKzQfRr7laajtIgpD6vKOPuDdHZo7Fkeo7g==
 
 "@testing-library/dom@^7.28.1":
   version "7.30.3"
