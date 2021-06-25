@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import '@tencent/tsign-component-library/dist/tsign-component.min.css';
 import loadable from '@loadable/component';
-import { Alert } from '@tencent/tsign-component-library';
+import { Alert, ImagePreview } from '@tencent/tsign-component';
 import { convertErrorCode } from '@tencent/tsign-utils';
 
 const Context = loadable(() => import('@context/index'), { fallback: <h1>loading</h1> });
@@ -39,6 +39,7 @@ function App() {
           ]),
         )}
         <Alert>{`今天是${new Date().toLocaleString()}`}</Alert>
+        <ImagePreview></ImagePreview>
         <ul>
           <li>
             <Link to="/context">context</Link>

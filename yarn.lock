@@ -2651,10 +2651,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tencent/tsign-component-library@^0.1.10":
-  version "0.1.10"
-  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-component-library/-/@tencent/tsign-component-library-0.1.10.tgz#b51127f5381d00ae881af2630dbd5c1be5233329"
-  integrity sha512-ZDe6PC+ZIh7AZROtBHk2Y0qmwjeYmEWRBsTUrTAHq+gCNpmgo27ZmvTT0/G4u7w3ZnHj0PvQtIOwgxcgwH+yJw==
+"@tencent/tsign-component@^0.1.11":
+  version "0.1.11"
+  resolved "https://mirrors.tencent.com/npm/@tencent/tsign-component/-/@tencent/tsign-component-0.1.11.tgz#b3d041298d9c29a212fb55b70107a12fd0a81486"
+  integrity sha512-3pCrF0dbPDilFzCQ2Hv7/lZNYrsw6rtfuJN6S7FRZPpAi68/A4zxXUU50i+vfjXApNGj0bzolo+ZaecmJIuo6g==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.28.0"
     classnames "^2.3.1"
